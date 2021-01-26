@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+  }
+
+  .all {
+    width: 1200px;
+    height: 460px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    /* margin: 100px auto; */
+    position: relative;
+  }
+
+  .screen {
+    width: 1200px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .screen li {
+    width: 1200px;
+    height: 460px;
+    overflow: hidden;
+    float: left;
+  }
+
+  .screen img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .screen ul {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 7300px;
+  }
+
+  .all ol {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .all ol li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    /* background: #fff; */
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .all ol li.current {
+    background: #d3d7d4;
+    
+  }
+
+  .screen #arr {
+    display: none;
+    z-index: 1000;
+  }
+
+  #arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    /* background: #000; */
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+  }
+  #arr #left{
+      left: 240px;
+  }
+
+    #arr #right {
+    right: 5px;
+    left: auto;
+  } 
+
+  #arr span:hover{
+    background: #000;
+  }
